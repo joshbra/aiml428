@@ -18,8 +18,11 @@ If those files are saved into this folder as full_data.txt and full_scores.txt, 
 Additionally, you can just load in the trained model by downloading it from https://github.com/joshbra/aiml428/blob/master/model.h5?raw=true
 
 To run the program on an ECS machine:
+
     - Download the full_data.txt and full_scores.txt
+
     - pip install -r requirements.txt
+    
     - python3 assignment_p1.py
 
 This will load in the data, train the model, test it, and print out the resultant loss and accuracy.
