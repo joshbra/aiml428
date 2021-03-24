@@ -6,8 +6,11 @@ from tensorflow.python.keras.preprocessing import text
 
 # I'm using the IMDB 50k reviews dataset, which is split 50:50 into positive and negative reviews, with 25k of each
 # you can find the data sets here: 
+#
 #  - full_data.txt: https://raw.githubusercontent.com/joshbra/aiml428/master/full_data.txt (about 65MB)
 #  - full_scores.txt: https://raw.githubusercontent.com/joshbra/aiml428/master/full_scores.txt
+#
+# full Github: https://github.com/joshbra/aiml428
 
 print('> loading data')
 with open('./full_data.txt') as f:
@@ -18,8 +21,9 @@ with open('./full_scores.txt') as f:
 print('> data loaded')
 
 # additionally, I have uploaded the model to Github as well, which you can download and load in.
-#  -  (also about 65MB)
+#  - https://github.com/joshbra/aiml428/blob/master/model.h5?raw=true (also about 65MB)
 # model = tf.keras.models.load_model('./model.h5')
+# comment out the below lines until compile() (line 58)
 
 # Split our data into a train and test set - training is 80% of original
 train_X, test_X, train_Y, test_Y = model_selection.train_test_split(data, scores, random_state=1, test_size=0.2)
